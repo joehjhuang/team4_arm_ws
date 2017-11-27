@@ -1,0 +1,8 @@
+prefix=/home/joehuang/Documents/MIT/2.12/team4_ws/devel
+
+Name: actionlib_tutorial
+Description: Description of actionlib_tutorial
+Version: 0.0.0
+Cflags: -I/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include
+Libs: -L/home/joehuang/Documents/MIT/2.12/team4_ws/devel/lib 
+Requires: actionlib_msgs

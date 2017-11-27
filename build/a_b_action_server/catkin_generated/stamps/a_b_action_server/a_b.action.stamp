@@ -1,0 +1,5 @@
+float32 force
+---
+bool succeed
+---
+geometry_msgs/Vector3 moved_distance
