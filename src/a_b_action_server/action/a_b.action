@@ -1,5 +1,5 @@
 float32 force
+float32 goal_distance
 ---
-bool succeed
 ---
-geometry_msgs/Vector3 moved_distance
+float32 moved_distance

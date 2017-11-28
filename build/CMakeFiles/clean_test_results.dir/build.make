@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/src
+CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
+CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build
 
 # Utility rule file for clean_test_results.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
 include CMakeFiles/clean_test_results.dir/progress.make
 
 CMakeFiles/clean_test_results:
-	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/joehuang/Documents/MIT/2.12/team4_ws/build/test_results
+	/usr/bin/python /opt/ros/kinetic/share/catkin/cmake/test/remove_test_results.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/test_results
 
 clean_test_results: CMakeFiles/clean_test_results
 clean_test_results: CMakeFiles/clean_test_results.dir/build.make
@@ -71,6 +71,6 @@ CMakeFiles/clean_test_results.dir/clean:
 .PHONY : CMakeFiles/clean_test_results.dir/clean
 
 CMakeFiles/clean_test_results.dir/depend:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_ws/src /home/joehuang/Documents/MIT/2.12/team4_ws/src /home/joehuang/Documents/MIT/2.12/team4_ws/build /home/joehuang/Documents/MIT/2.12/team4_ws/build /home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles/clean_test_results.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : CMakeFiles/clean_test_results.dir/depend
 

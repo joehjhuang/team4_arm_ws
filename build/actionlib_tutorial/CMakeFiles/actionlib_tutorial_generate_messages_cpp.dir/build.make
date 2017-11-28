@@ -43,95 +43,95 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/src
+CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
+CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build
 
 # Utility rule file for actionlib_tutorial_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/progress.make
 
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciGoal.h
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciResult.h
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciGoal.h
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciResult.h
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h
 
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciAction.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from actionlib_tutorial/FibonacciAction.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciAction.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from actionlib_tutorial/FibonacciActionFeedback.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from actionlib_tutorial/FibonacciFeedback.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciGoal.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciGoal.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciGoal.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from actionlib_tutorial/FibonacciGoal.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from actionlib_tutorial/FibonacciActionFeedback.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from actionlib_tutorial/FibonacciActionGoal.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciGoal.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciGoal.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciGoal.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from actionlib_tutorial/FibonacciGoal.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciResult.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciResult.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciResult.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from actionlib_tutorial/FibonacciResult.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from actionlib_tutorial/FibonacciActionGoal.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from actionlib_tutorial/FibonacciActionResult.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciResult.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciResult.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciResult.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from actionlib_tutorial/FibonacciResult.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from actionlib_tutorial/FibonacciFeedback.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from actionlib_tutorial/FibonacciActionResult.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciAction.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from actionlib_tutorial/FibonacciAction.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciAction.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 actionlib_tutorial_generate_messages_cpp: actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp
-actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciAction.h
-actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h
-actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h
-actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciGoal.h
-actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h
-actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciResult.h
-actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h
+actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionFeedback.h
+actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciGoal.h
+actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionGoal.h
+actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciResult.h
+actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciActionResult.h
+actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciFeedback.h
+actionlib_tutorial_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/actionlib_tutorial/FibonacciAction.h
 actionlib_tutorial_generate_messages_cpp: actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/build.make
 
 .PHONY : actionlib_tutorial_generate_messages_cpp
@@ -142,10 +142,10 @@ actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/build
 .PHONY : actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/build
 
 actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/clean:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/clean
 
 actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/depend:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_ws/src /home/joehuang/Documents/MIT/2.12/team4_ws/src/actionlib_tutorial /home/joehuang/Documents/MIT/2.12/team4_ws/build /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src/actionlib_tutorial /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_cpp.dir/depend
 

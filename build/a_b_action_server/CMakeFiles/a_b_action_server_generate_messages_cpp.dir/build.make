@@ -43,98 +43,95 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/src
+CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
+CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build
 
 # Utility rule file for a_b_action_server_generate_messages_cpp.
 
 # Include the progress variables for this target.
 include a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/progress.make
 
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bFeedback.h
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bGoal.h
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionGoal.h
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bResult.h
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionGoal.h
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bGoal.h
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bResult.h
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bFeedback.h
 
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from a_b_action_server/a_bActionResult.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionResult.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating C++ code from a_b_action_server/a_bActionResult.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionResult.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bAction.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from a_b_action_server/a_bAction.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bAction.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionGoal.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionGoal.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionGoal.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionGoal.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionGoal.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionGoal.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating C++ code from a_b_action_server/a_bActionGoal.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionGoal.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bFeedback.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bFeedback.h: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bFeedback.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from a_b_action_server/a_bFeedback.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bFeedback.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bGoal.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bGoal.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bGoal.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating C++ code from a_b_action_server/a_bGoal.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bGoal.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bGoal.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bGoal.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bGoal.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from a_b_action_server/a_bGoal.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bGoal.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bAction.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating C++ code from a_b_action_server/a_bAction.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bAction.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionGoal.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionGoal.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionGoal.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionGoal.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionGoal.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionGoal.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from a_b_action_server/a_bActionGoal.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionGoal.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bResult.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bResult.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bResult.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating C++ code from a_b_action_server/a_bResult.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bResult.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/geometry_msgs/msg/Vector3.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from a_b_action_server/a_bActionFeedback.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bActionFeedback.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating C++ code from a_b_action_server/a_bActionFeedback.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bActionFeedback.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bResult.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bResult.h: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bResult.h: /opt/ros/kinetic/share/gencpp/msg.h.template
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from a_b_action_server/a_bResult.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg/a_bResult.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bFeedback.h: /opt/ros/kinetic/lib/gencpp/gen_cpp.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bFeedback.h: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bFeedback.h: /opt/ros/kinetic/share/gencpp/msg.h.template
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating C++ code from a_b_action_server/a_bFeedback.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/gencpp/cmake/../../../lib/gencpp/gen_cpp.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg/a_bFeedback.msg -Ia_b_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_b_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_b_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server -e /opt/ros/kinetic/share/gencpp/cmake/..
 
 a_b_action_server_generate_messages_cpp: a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp
-a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionResult.h
-a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bAction.h
-a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bFeedback.h
-a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bGoal.h
-a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionGoal.h
-a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bActionFeedback.h
-a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/include/a_b_action_server/a_bResult.h
+a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionResult.h
+a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionGoal.h
+a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bGoal.h
+a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bAction.h
+a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bResult.h
+a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bActionFeedback.h
+a_b_action_server_generate_messages_cpp: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/include/a_b_action_server/a_bFeedback.h
 a_b_action_server_generate_messages_cpp: a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/build.make
 
 .PHONY : a_b_action_server_generate_messages_cpp
@@ -145,10 +142,10 @@ a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/build: 
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/build
 
 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/clean:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server && $(CMAKE_COMMAND) -P CMakeFiles/a_b_action_server_generate_messages_cpp.dir/cmake_clean.cmake
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server && $(CMAKE_COMMAND) -P CMakeFiles/a_b_action_server_generate_messages_cpp.dir/cmake_clean.cmake
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/clean
 
 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/depend:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_ws/src /home/joehuang/Documents/MIT/2.12/team4_ws/src/a_b_action_server /home/joehuang/Documents/MIT/2.12/team4_ws/build /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src/a_b_action_server /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/depend
 

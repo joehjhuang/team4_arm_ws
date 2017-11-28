@@ -2,7 +2,7 @@
 
 message(STATUS "a_a_action_server: 7 messages, 0 services")
 
-set(MSG_I_FLAGS "-Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg;-Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
+set(MSG_I_FLAGS "-Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg;-Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg;-Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg;-Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg")
 
 # Find all generators
 find_package(gencpp REQUIRED)
@@ -17,39 +17,39 @@ add_custom_target(a_a_action_server_generate_messages ALL)
 
 
 
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
 add_custom_target(_a_a_action_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg" "actionlib_msgs/GoalStatus:a_a_action_server/a_aActionGoal:a_a_action_server/a_aFeedback:a_a_action_server/a_aActionResult:a_a_action_server/a_aGoal:a_a_action_server/a_aActionFeedback:actionlib_msgs/GoalID:a_a_action_server/a_aResult:std_msgs/Header"
 )
 
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
 add_custom_target(_a_a_action_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/Header:a_a_action_server/a_aGoal"
 )
 
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
 add_custom_target(_a_a_action_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" "actionlib_msgs/GoalID:std_msgs/Header:a_a_action_server/a_aFeedback:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" ""
 )
 
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
 add_custom_target(_a_a_action_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" "actionlib_msgs/GoalID:std_msgs/Header:a_a_action_server/a_aGoal"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg" ""
 )
 
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
 add_custom_target(_a_a_action_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" ""
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" "actionlib_msgs/GoalID:a_a_action_server/a_aResult:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
 add_custom_target(_a_a_action_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" "actionlib_msgs/GoalID:std_msgs/Header:a_a_action_server/a_aResult:actionlib_msgs/GoalStatus"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" "a_a_action_server/a_aFeedback:actionlib_msgs/GoalID:std_msgs/Header:actionlib_msgs/GoalStatus"
 )
 
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
 add_custom_target(_a_a_action_server_generate_messages_check_deps_${_filename}
-  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg" "a_a_action_server/a_aActionFeedback:a_a_action_server/a_aFeedback:actionlib_msgs/GoalStatus:a_a_action_server/a_aActionResult:a_a_action_server/a_aResult:a_a_action_server/a_aGoal:actionlib_msgs/GoalID:a_a_action_server/a_aActionGoal:std_msgs/Header"
+  COMMAND ${CATKIN_ENV} ${PYTHON_EXECUTABLE} ${GENMSG_CHECK_DEPS_SCRIPT} "a_a_action_server" "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" ""
 )
 
 #
@@ -59,43 +59,43 @@ add_custom_target(_a_a_action_server_generate_messages_check_deps_${_filename}
 ### Section generating for lang: gencpp
 ### Generating Messages
 _generate_msg_cpp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_cpp(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_cpp(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_cpp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_cpp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_cpp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_cpp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_cpp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_cpp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gencpp_INSTALL_DIR}/a_a_action_server
@@ -115,19 +115,19 @@ add_custom_target(a_a_action_server_generate_messages_cpp
 add_dependencies(a_a_action_server_generate_messages a_a_action_server_generate_messages_cpp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_cpp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_cpp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_cpp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_cpp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_cpp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_cpp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_cpp _a_a_action_server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -140,43 +140,43 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS a_a_action_server_generate_messages
 ### Section generating for lang: geneus
 ### Generating Messages
 _generate_msg_eus(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_eus(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_eus(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_eus(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_eus(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_eus(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_eus(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_eus(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_eus(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${geneus_INSTALL_DIR}/a_a_action_server
@@ -196,19 +196,19 @@ add_custom_target(a_a_action_server_generate_messages_eus
 add_dependencies(a_a_action_server_generate_messages a_a_action_server_generate_messages_eus)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_eus _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_eus _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_eus _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_eus _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_eus _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_eus _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_eus _a_a_action_server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -221,43 +221,43 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS a_a_action_server_generate_messages
 ### Section generating for lang: genlisp
 ### Generating Messages
 _generate_msg_lisp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_lisp(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_lisp(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_lisp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_lisp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_lisp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_lisp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_lisp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_lisp(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genlisp_INSTALL_DIR}/a_a_action_server
@@ -277,19 +277,19 @@ add_custom_target(a_a_action_server_generate_messages_lisp
 add_dependencies(a_a_action_server_generate_messages a_a_action_server_generate_messages_lisp)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_lisp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_lisp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_lisp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_lisp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_lisp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_lisp _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_lisp _a_a_action_server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -302,43 +302,43 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS a_a_action_server_generate_messages
 ### Section generating for lang: gennodejs
 ### Generating Messages
 _generate_msg_nodejs(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_nodejs(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_nodejs(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_nodejs(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_nodejs(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_nodejs(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_nodejs(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_nodejs(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_nodejs(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${gennodejs_INSTALL_DIR}/a_a_action_server
@@ -358,19 +358,19 @@ add_custom_target(a_a_action_server_generate_messages_nodejs
 add_dependencies(a_a_action_server_generate_messages a_a_action_server_generate_messages_nodejs)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_nodejs _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_nodejs _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_nodejs _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_nodejs _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_nodejs _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_nodejs _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_nodejs _a_a_action_server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility
@@ -383,43 +383,43 @@ list(APPEND ${PROJECT_NAME}_EXPORTED_TARGETS a_a_action_server_generate_messages
 ### Section generating for lang: genpy
 ### Generating Messages
 _generate_msg_py(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_py(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "${MSG_I_FLAGS}"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
+)
+_generate_msg_py(a_a_action_server
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_py(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_py(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
+  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_py(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg"
   "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
 )
 _generate_msg_py(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg"
-  "${MSG_I_FLAGS}"
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_py(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg"
-  "${MSG_I_FLAGS}"
-  "/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalID.msg;/opt/ros/kinetic/share/std_msgs/cmake/../msg/Header.msg;/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg;/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg/GoalStatus.msg"
-  ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
-)
-_generate_msg_py(a_a_action_server
-  "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg"
+  "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg"
   "${MSG_I_FLAGS}"
   ""
   ${CATKIN_DEVEL_PREFIX}/${genpy_INSTALL_DIR}/a_a_action_server
@@ -439,19 +439,19 @@ add_custom_target(a_a_action_server_generate_messages_py
 add_dependencies(a_a_action_server_generate_messages a_a_action_server_generate_messages_py)
 
 # add dependencies to all check dependencies targets
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_py _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_py _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_py _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_py _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_py _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_py _a_a_action_server_generate_messages_check_deps_${_filename})
-get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg" NAME_WE)
+get_filename_component(_filename "/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg" NAME_WE)
 add_dependencies(a_a_action_server_generate_messages_py _a_a_action_server_generate_messages_check_deps_${_filename})
 
 # target for backward compatibility

@@ -43,10 +43,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/src
+CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
+CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build
 
 # Utility rule file for _a_a_action_server_generate_messages_check_deps_a_aAction.
 
@@ -54,7 +54,7 @@ CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
 include a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/progress.make
 
 a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg a_a_action_server/a_aActionFeedback:a_a_action_server/a_aFeedback:actionlib_msgs/GoalStatus:a_a_action_server/a_aActionResult:a_a_action_server/a_aResult:a_a_action_server/a_aGoal:actionlib_msgs/GoalID:a_a_action_server/a_aActionGoal:std_msgs/Header
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/genmsg/cmake/../../../lib/genmsg/genmsg_check_deps.py a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg actionlib_msgs/GoalStatus:a_a_action_server/a_aActionGoal:a_a_action_server/a_aFeedback:a_a_action_server/a_aActionResult:a_a_action_server/a_aGoal:a_a_action_server/a_aActionFeedback:actionlib_msgs/GoalID:a_a_action_server/a_aResult:std_msgs/Header
 
 _a_a_action_server_generate_messages_check_deps_a_aAction: a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction
 _a_a_action_server_generate_messages_check_deps_a_aAction: a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/build.make
@@ -67,10 +67,10 @@ a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_a
 .PHONY : a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/build
 
 a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/clean:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && $(CMAKE_COMMAND) -P CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/cmake_clean.cmake
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && $(CMAKE_COMMAND) -P CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/cmake_clean.cmake
 .PHONY : a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/clean
 
 a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/depend:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_ws/src /home/joehuang/Documents/MIT/2.12/team4_ws/src/a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_ws/build /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src/a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : a_a_action_server/CMakeFiles/_a_a_action_server_generate_messages_check_deps_a_aAction.dir/depend
 

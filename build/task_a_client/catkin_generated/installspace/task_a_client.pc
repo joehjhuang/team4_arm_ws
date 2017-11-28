@@ -1,8 +1,8 @@
-prefix=/home/joehuang/Documents/MIT/2.12/team4_ws/install
+prefix=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/install
 
 Name: task_a_client
 Description: Description of task_a_client
 Version: 0.0.0
 Cflags: 
-Libs: -L/home/joehuang/Documents/MIT/2.12/team4_ws/install/lib 
+Libs: -L/home/joehuang/Documents/MIT/2.12/team4_arm_ws/install/lib 
 Requires: 

@@ -48,10 +48,10 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/src
+CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
+CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build
 
 #=============================================================================
 # Targets provided globally by CMake.
@@ -68,17 +68,6 @@ install/fast: preinstall/fast
 	/usr/bin/cmake -P cmake_install.cmake
 .PHONY : install/fast
 
-# Special rule for the target edit_cache
-edit_cache:
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
-	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
-.PHONY : edit_cache
-
-# Special rule for the target edit_cache
-edit_cache/fast: edit_cache
-
-.PHONY : edit_cache/fast
-
 # Special rule for the target rebuild_cache
 rebuild_cache:
 	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "Running CMake to regenerate build system..."
@@ -89,6 +78,17 @@ rebuild_cache:
 rebuild_cache/fast: rebuild_cache
 
 .PHONY : rebuild_cache/fast
+
+# Special rule for the target edit_cache
+edit_cache:
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --cyan "No interactive CMake dialog available..."
+	/usr/bin/cmake -E echo No\ interactive\ CMake\ dialog\ available.
+.PHONY : edit_cache
+
+# Special rule for the target edit_cache
+edit_cache/fast: edit_cache
+
+.PHONY : edit_cache/fast
 
 # Special rule for the target list_install_components
 list_install_components:
@@ -135,14 +135,14 @@ test/fast: test
 
 # The main all target
 all: cmake_check_build_system
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_b_action_server/CMakeFiles/progress.marks
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/all
-	$(CMAKE_COMMAND) -E cmake_progress_start /home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles 0
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -E cmake_progress_start /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_b_action_server/CMakeFiles/progress.marks
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/all
+	$(CMAKE_COMMAND) -E cmake_progress_start /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles 0
 .PHONY : all
 
 # The main clean target
 clean:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/clean
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/clean
 .PHONY : clean
 
 # The main clean target
@@ -152,67 +152,22 @@ clean/fast: clean
 
 # Prepare targets for installation.
 preinstall: all
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/preinstall
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/preinstall
 .PHONY : preinstall
 
 # Prepare targets for installation.
 preinstall/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/preinstall
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/preinstall
 .PHONY : preinstall/fast
 
 # clear depends
 depend:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 1
 .PHONY : depend
 
 # Convenience name for target.
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/rule
-.PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/rule
-
-# Convenience name for target.
-a_b_action_server_generate_messages_cpp: a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/rule
-
-.PHONY : a_b_action_server_generate_messages_cpp
-
-# fast build rule for target.
-a_b_action_server_generate_messages_cpp/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/build
-.PHONY : a_b_action_server_generate_messages_cpp/fast
-
-# Convenience name for target.
-a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/rule
-.PHONY : a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/rule
-
-# Convenience name for target.
-a_b_action_server_gencpp: a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/rule
-
-.PHONY : a_b_action_server_gencpp
-
-# fast build rule for target.
-a_b_action_server_gencpp/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/build
-.PHONY : a_b_action_server_gencpp/fast
-
-# Convenience name for target.
-a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/rule
-.PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/rule
-
-# Convenience name for target.
-_a_b_action_server_generate_messages_check_deps_a_bActionGoal: a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/rule
-
-.PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionGoal
-
-# fast build rule for target.
-_a_b_action_server_generate_messages_check_deps_a_bActionGoal/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/build
-.PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionGoal/fast
-
-# Convenience name for target.
 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bFeedback.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bFeedback.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bFeedback.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bFeedback.dir/rule
 
 # Convenience name for target.
@@ -222,12 +177,12 @@ _a_b_action_server_generate_messages_check_deps_a_bFeedback: a_b_action_server/C
 
 # fast build rule for target.
 _a_b_action_server_generate_messages_check_deps_a_bFeedback/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bFeedback.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bFeedback.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bFeedback.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bFeedback.dir/build
 .PHONY : _a_b_action_server_generate_messages_check_deps_a_bFeedback/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/a_b_action_server_genpy.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_genpy.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_genpy.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_genpy.dir/rule
 
 # Convenience name for target.
@@ -237,12 +192,12 @@ a_b_action_server_genpy: a_b_action_server/CMakeFiles/a_b_action_server_genpy.di
 
 # fast build rule for target.
 a_b_action_server_genpy/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_genpy.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_genpy.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_genpy.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_genpy.dir/build
 .PHONY : a_b_action_server_genpy/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bResult.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bResult.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bResult.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bResult.dir/rule
 
 # Convenience name for target.
@@ -252,12 +207,12 @@ _a_b_action_server_generate_messages_check_deps_a_bResult: a_b_action_server/CMa
 
 # fast build rule for target.
 _a_b_action_server_generate_messages_check_deps_a_bResult/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bResult.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bResult.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bResult.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bResult.dir/build
 .PHONY : _a_b_action_server_generate_messages_check_deps_a_bResult/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages.dir/rule
 
 # Convenience name for target.
@@ -267,72 +222,57 @@ a_b_action_server_generate_messages: a_b_action_server/CMakeFiles/a_b_action_ser
 
 # fast build rule for target.
 a_b_action_server_generate_messages/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages.dir/build
 .PHONY : a_b_action_server_generate_messages/fast
 
 # Convenience name for target.
-a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/rule
-.PHONY : a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/rule
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/rule:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/rule
+.PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/rule
 
 # Convenience name for target.
-a_b_action_server_geneus: a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/rule
+a_b_action_server_generate_messages_cpp: a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/rule
 
-.PHONY : a_b_action_server_geneus
+.PHONY : a_b_action_server_generate_messages_cpp
 
 # fast build rule for target.
-a_b_action_server_geneus/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/build
-.PHONY : a_b_action_server_geneus/fast
+a_b_action_server_generate_messages_cpp/fast:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_cpp.dir/build
+.PHONY : a_b_action_server_generate_messages_cpp/fast
 
 # Convenience name for target.
-a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/rule
-.PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/rule
+a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/rule:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/rule
+.PHONY : a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/rule
 
 # Convenience name for target.
-_a_b_action_server_generate_messages_check_deps_a_bActionFeedback: a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/rule
+a_b_action_server_gencpp: a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/rule
 
-.PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionFeedback
+.PHONY : a_b_action_server_gencpp
 
 # fast build rule for target.
-_a_b_action_server_generate_messages_check_deps_a_bActionFeedback/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/build
-.PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionFeedback/fast
+a_b_action_server_gencpp/fast:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_gencpp.dir/build
+.PHONY : a_b_action_server_gencpp/fast
 
 # Convenience name for target.
-a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/rule
-.PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/rule
+a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/rule:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/rule
+.PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/rule
 
 # Convenience name for target.
-_a_b_action_server_generate_messages_check_deps_a_bAction: a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/rule
+_a_b_action_server_generate_messages_check_deps_a_bActionGoal: a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/rule
 
-.PHONY : _a_b_action_server_generate_messages_check_deps_a_bAction
+.PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionGoal
 
 # fast build rule for target.
-_a_b_action_server_generate_messages_check_deps_a_bAction/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/build
-.PHONY : _a_b_action_server_generate_messages_check_deps_a_bAction/fast
-
-# Convenience name for target.
-a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/rule
-.PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/rule
-
-# Convenience name for target.
-a_b_action_server_generate_messages_lisp: a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/rule
-
-.PHONY : a_b_action_server_generate_messages_lisp
-
-# fast build rule for target.
-a_b_action_server_generate_messages_lisp/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/build
-.PHONY : a_b_action_server_generate_messages_lisp/fast
+_a_b_action_server_generate_messages_check_deps_a_bActionGoal/fast:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionGoal.dir/build
+.PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionGoal/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionResult.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionResult.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionResult.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionResult.dir/rule
 
 # Convenience name for target.
@@ -342,12 +282,12 @@ _a_b_action_server_generate_messages_check_deps_a_bActionResult: a_b_action_serv
 
 # fast build rule for target.
 _a_b_action_server_generate_messages_check_deps_a_bActionResult/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionResult.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionResult.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionResult.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionResult.dir/build
 .PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionResult/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/a_b_action_server_gennodejs.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_gennodejs.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_gennodejs.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_gennodejs.dir/rule
 
 # Convenience name for target.
@@ -357,12 +297,72 @@ a_b_action_server_gennodejs: a_b_action_server/CMakeFiles/a_b_action_server_genn
 
 # fast build rule for target.
 a_b_action_server_gennodejs/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_gennodejs.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_gennodejs.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_gennodejs.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_gennodejs.dir/build
 .PHONY : a_b_action_server_gennodejs/fast
 
 # Convenience name for target.
+a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/rule:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/rule
+.PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/rule
+
+# Convenience name for target.
+_a_b_action_server_generate_messages_check_deps_a_bActionFeedback: a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/rule
+
+.PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionFeedback
+
+# fast build rule for target.
+_a_b_action_server_generate_messages_check_deps_a_bActionFeedback/fast:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bActionFeedback.dir/build
+.PHONY : _a_b_action_server_generate_messages_check_deps_a_bActionFeedback/fast
+
+# Convenience name for target.
+a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/rule:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/rule
+.PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/rule
+
+# Convenience name for target.
+_a_b_action_server_generate_messages_check_deps_a_bAction: a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/rule
+
+.PHONY : _a_b_action_server_generate_messages_check_deps_a_bAction
+
+# fast build rule for target.
+_a_b_action_server_generate_messages_check_deps_a_bAction/fast:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bAction.dir/build
+.PHONY : _a_b_action_server_generate_messages_check_deps_a_bAction/fast
+
+# Convenience name for target.
+a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/rule:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/rule
+.PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/rule
+
+# Convenience name for target.
+a_b_action_server_generate_messages_lisp: a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/rule
+
+.PHONY : a_b_action_server_generate_messages_lisp
+
+# fast build rule for target.
+a_b_action_server_generate_messages_lisp/fast:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_lisp.dir/build
+.PHONY : a_b_action_server_generate_messages_lisp/fast
+
+# Convenience name for target.
+a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/rule:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/rule
+.PHONY : a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/rule
+
+# Convenience name for target.
+a_b_action_server_geneus: a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/rule
+
+.PHONY : a_b_action_server_geneus
+
+# fast build rule for target.
+a_b_action_server_geneus/fast:
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_geneus.dir/build
+.PHONY : a_b_action_server_geneus/fast
+
+# Convenience name for target.
 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_eus.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_eus.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_eus.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_eus.dir/rule
 
 # Convenience name for target.
@@ -372,12 +372,12 @@ a_b_action_server_generate_messages_eus: a_b_action_server/CMakeFiles/a_b_action
 
 # fast build rule for target.
 a_b_action_server_generate_messages_eus/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_eus.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_eus.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_eus.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_eus.dir/build
 .PHONY : a_b_action_server_generate_messages_eus/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bGoal.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bGoal.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bGoal.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bGoal.dir/rule
 
 # Convenience name for target.
@@ -387,12 +387,12 @@ _a_b_action_server_generate_messages_check_deps_a_bGoal: a_b_action_server/CMake
 
 # fast build rule for target.
 _a_b_action_server_generate_messages_check_deps_a_bGoal/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bGoal.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bGoal.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bGoal.dir/build.make a_b_action_server/CMakeFiles/_a_b_action_server_generate_messages_check_deps_a_bGoal.dir/build
 .PHONY : _a_b_action_server_generate_messages_check_deps_a_bGoal/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/a_b_action_server_genlisp.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_genlisp.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_genlisp.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_genlisp.dir/rule
 
 # Convenience name for target.
@@ -402,12 +402,12 @@ a_b_action_server_genlisp: a_b_action_server/CMakeFiles/a_b_action_server_genlis
 
 # fast build rule for target.
 a_b_action_server_genlisp/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_genlisp.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_genlisp.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_genlisp.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_genlisp.dir/build
 .PHONY : a_b_action_server_genlisp/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_py.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_py.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_py.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_py.dir/rule
 
 # Convenience name for target.
@@ -417,12 +417,12 @@ a_b_action_server_generate_messages_py: a_b_action_server/CMakeFiles/a_b_action_
 
 # fast build rule for target.
 a_b_action_server_generate_messages_py/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_py.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_py.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_py.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_py.dir/build
 .PHONY : a_b_action_server_generate_messages_py/fast
 
 # Convenience name for target.
 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_nodejs.dir/rule:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_nodejs.dir/rule
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f CMakeFiles/Makefile2 a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_nodejs.dir/rule
 .PHONY : a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_nodejs.dir/rule
 
 # Convenience name for target.
@@ -432,7 +432,7 @@ a_b_action_server_generate_messages_nodejs: a_b_action_server/CMakeFiles/a_b_act
 
 # fast build rule for target.
 a_b_action_server_generate_messages_nodejs/fast:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_nodejs.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_nodejs.dir/build
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(MAKE) -f a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_nodejs.dir/build.make a_b_action_server/CMakeFiles/a_b_action_server_generate_messages_nodejs.dir/build
 .PHONY : a_b_action_server_generate_messages_nodejs/fast
 
 # Help Target
@@ -442,21 +442,21 @@ help:
 	@echo "... clean"
 	@echo "... depend"
 	@echo "... install"
-	@echo "... a_b_action_server_generate_messages_cpp"
-	@echo "... a_b_action_server_gencpp"
-	@echo "... _a_b_action_server_generate_messages_check_deps_a_bActionGoal"
-	@echo "... edit_cache"
 	@echo "... _a_b_action_server_generate_messages_check_deps_a_bFeedback"
 	@echo "... a_b_action_server_genpy"
 	@echo "... _a_b_action_server_generate_messages_check_deps_a_bResult"
 	@echo "... rebuild_cache"
 	@echo "... a_b_action_server_generate_messages"
-	@echo "... a_b_action_server_geneus"
+	@echo "... a_b_action_server_generate_messages_cpp"
+	@echo "... a_b_action_server_gencpp"
+	@echo "... _a_b_action_server_generate_messages_check_deps_a_bActionGoal"
+	@echo "... edit_cache"
+	@echo "... _a_b_action_server_generate_messages_check_deps_a_bActionResult"
+	@echo "... a_b_action_server_gennodejs"
 	@echo "... _a_b_action_server_generate_messages_check_deps_a_bActionFeedback"
 	@echo "... _a_b_action_server_generate_messages_check_deps_a_bAction"
 	@echo "... a_b_action_server_generate_messages_lisp"
-	@echo "... _a_b_action_server_generate_messages_check_deps_a_bActionResult"
-	@echo "... a_b_action_server_gennodejs"
+	@echo "... a_b_action_server_geneus"
 	@echo "... a_b_action_server_generate_messages_eus"
 	@echo "... list_install_components"
 	@echo "... _a_b_action_server_generate_messages_check_deps_a_bGoal"
@@ -477,6 +477,6 @@ help:
 # No rule that depends on this can have commands that come from listfiles
 # because they might be regenerated.
 cmake_check_build_system:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -H$(CMAKE_SOURCE_DIR) -B$(CMAKE_BINARY_DIR) --check-build-system CMakeFiles/Makefile.cmake 0
 .PHONY : cmake_check_build_system
 

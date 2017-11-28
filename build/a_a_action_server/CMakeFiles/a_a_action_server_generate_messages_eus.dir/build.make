@@ -43,94 +43,94 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/src
+CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
+CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build
 
 # Utility rule file for a_a_action_server_generate_messages_eus.
 
 # Include the progress variables for this target.
 include a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/progress.make
 
-a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aResult.l
-a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aFeedback.l
-a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l
-a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l
-a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l
-a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l
-a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aGoal.l
-a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/manifest.l
+a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l
+a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l
+a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aFeedback.l
+a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aGoal.l
+a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l
+a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l
+a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aResult.l
+a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/manifest.l
 
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aResult.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aResult.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from a_a_action_server/a_aResult.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from a_a_action_server/a_aAction.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aAction.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aFeedback.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from a_a_action_server/a_aFeedback.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from a_a_action_server/a_aActionGoal.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from a_a_action_server/a_aActionFeedback.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aFeedback.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from a_a_action_server/a_aFeedback.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from a_a_action_server/a_aActionGoal.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aGoal.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aGoal.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from a_a_action_server/a_aGoal.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aGoal.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from a_a_action_server/a_aAction.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aAction.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from a_a_action_server/a_aActionResult.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from a_a_action_server/a_aActionResult.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aActionResult.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from a_a_action_server/a_aActionFeedback.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aActionFeedback.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aGoal.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aGoal.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from a_a_action_server/a_aGoal.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg/a_aGoal.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aResult.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aResult.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from a_a_action_server/a_aResult.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg/a_aResult.msg -Ia_a_action_server:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/a_a_action_server/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Igeometry_msgs:/opt/ros/kinetic/share/geometry_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p a_a_action_server -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp manifest code for a_a_action_server"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server a_a_action_server actionlib_msgs geometry_msgs std_msgs
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp manifest code for a_a_action_server"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server a_a_action_server actionlib_msgs geometry_msgs std_msgs
 
 a_a_action_server_generate_messages_eus: a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus
-a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aResult.l
-a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aFeedback.l
-a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l
-a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l
-a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l
-a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l
-a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aGoal.l
-a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/a_a_action_server/manifest.l
+a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aAction.l
+a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionGoal.l
+a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aFeedback.l
+a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aGoal.l
+a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionResult.l
+a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aActionFeedback.l
+a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/msg/a_aResult.l
+a_a_action_server_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/a_a_action_server/manifest.l
 a_a_action_server_generate_messages_eus: a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/build.make
 
 .PHONY : a_a_action_server_generate_messages_eus
@@ -141,10 +141,10 @@ a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/build: 
 .PHONY : a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/build
 
 a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/clean:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server && $(CMAKE_COMMAND) -P CMakeFiles/a_a_action_server_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server && $(CMAKE_COMMAND) -P CMakeFiles/a_a_action_server_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/clean
 
 a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/depend:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_ws/src /home/joehuang/Documents/MIT/2.12/team4_ws/src/a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_ws/build /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_ws/build/a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src/a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : a_a_action_server/CMakeFiles/a_a_action_server_generate_messages_eus.dir/depend
 

@@ -43,94 +43,94 @@ RM = /usr/bin/cmake -E remove -f
 EQUALS = =
 
 # The top-level source directory on which CMake was run.
-CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/src
+CMAKE_SOURCE_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src
 
 # The top-level build directory on which CMake was run.
-CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_ws/build
+CMAKE_BINARY_DIR = /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build
 
 # Utility rule file for actionlib_tutorial_generate_messages_eus.
 
 # Include the progress variables for this target.
 include actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/progress.make
 
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciFeedback.l
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciGoal.l
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciResult.l
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l
-actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/manifest.l
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciGoal.l
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciResult.l
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciFeedback.l
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l
+actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/manifest.l
 
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciAction.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from actionlib_tutorial/FibonacciAction.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciAction.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_1) "Generating EusLisp code from actionlib_tutorial/FibonacciActionFeedback.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciFeedback.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from actionlib_tutorial/FibonacciFeedback.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciGoal.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciGoal.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_2) "Generating EusLisp code from actionlib_tutorial/FibonacciGoal.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from actionlib_tutorial/FibonacciActionFeedback.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_3) "Generating EusLisp code from actionlib_tutorial/FibonacciActionGoal.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciGoal.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciGoal.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from actionlib_tutorial/FibonacciGoal.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciResult.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciResult.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Generating EusLisp code from actionlib_tutorial/FibonacciResult.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from actionlib_tutorial/FibonacciActionGoal.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Generating EusLisp code from actionlib_tutorial/FibonacciActionResult.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciResult.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciResult.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from actionlib_tutorial/FibonacciResult.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciFeedback.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciFeedback.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Generating EusLisp code from actionlib_tutorial/FibonacciFeedback.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from actionlib_tutorial/FibonacciActionResult.msg"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciAction.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalStatus.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionGoal.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciActionFeedback.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /opt/ros/kinetic/share/std_msgs/msg/Header.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciResult.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /opt/ros/kinetic/share/actionlib_msgs/msg/GoalID.msg
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciGoal.msg
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Generating EusLisp code from actionlib_tutorial/FibonacciAction.msg"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg/FibonacciAction.msg -Iactionlib_tutorial:/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/actionlib_tutorial/msg -Iactionlib_msgs:/opt/ros/kinetic/share/actionlib_msgs/cmake/../msg -Istd_msgs:/opt/ros/kinetic/share/std_msgs/cmake/../msg -p actionlib_tutorial -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg
 
-/home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp manifest code for actionlib_tutorial"
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial actionlib_tutorial actionlib_msgs std_msgs
+/home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/manifest.l: /opt/ros/kinetic/lib/geneus/gen_eus.py
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --blue --bold --progress-dir=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Generating EusLisp manifest code for actionlib_tutorial"
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && ../catkin_generated/env_cached.sh /usr/bin/python /opt/ros/kinetic/share/geneus/cmake/../../../lib/geneus/gen_eus.py -m -o /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial actionlib_tutorial actionlib_msgs std_msgs
 
 actionlib_tutorial_generate_messages_eus: actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus
-actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l
-actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciFeedback.l
-actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l
-actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciGoal.l
-actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l
-actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciResult.l
-actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l
-actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_ws/devel/share/roseus/ros/actionlib_tutorial/manifest.l
+actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionFeedback.l
+actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciGoal.l
+actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionGoal.l
+actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciResult.l
+actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciActionResult.l
+actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciFeedback.l
+actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/msg/FibonacciAction.l
+actionlib_tutorial_generate_messages_eus: /home/joehuang/Documents/MIT/2.12/team4_arm_ws/devel/share/roseus/ros/actionlib_tutorial/manifest.l
 actionlib_tutorial_generate_messages_eus: actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/build.make
 
 .PHONY : actionlib_tutorial_generate_messages_eus
@@ -141,10 +141,10 @@ actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/build
 .PHONY : actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/build
 
 actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/clean:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/cmake_clean.cmake
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial && $(CMAKE_COMMAND) -P CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/cmake_clean.cmake
 .PHONY : actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/clean
 
 actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/depend:
-	cd /home/joehuang/Documents/MIT/2.12/team4_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_ws/src /home/joehuang/Documents/MIT/2.12/team4_ws/src/actionlib_tutorial /home/joehuang/Documents/MIT/2.12/team4_ws/build /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial /home/joehuang/Documents/MIT/2.12/team4_ws/build/actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
+	cd /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build && $(CMAKE_COMMAND) -E cmake_depends "Unix Makefiles" /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src /home/joehuang/Documents/MIT/2.12/team4_arm_ws/src/actionlib_tutorial /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial /home/joehuang/Documents/MIT/2.12/team4_arm_ws/build/actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/DependInfo.cmake --color=$(COLOR)
 .PHONY : actionlib_tutorial/CMakeFiles/actionlib_tutorial_generate_messages_eus.dir/depend
 

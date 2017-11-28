@@ -1,0 +1,5 @@
+<launch>
+  <node name="a_a_action_server" pkg="a_a_action_server" type="action_server.py"/>
+  <node name="a_b_action_server" pkg="a_b_action_server" type="action_server.py"/>
+  <node name="a_halt_action_server" pkg="a_halt_action_server" type="action_server.py"/>
+</launch>
