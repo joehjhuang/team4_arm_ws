@@ -1,8 +1,0 @@
-prefix=/home/joehuang/Documents/MIT/2.12/team4_arm_ws/install
-
-Name: a_a_action_server
-Description: Description of a_a_action_server
-Version: 0.0.0
-Cflags: -I/home/joehuang/Documents/MIT/2.12/team4_arm_ws/install/include
-Libs: -L/home/joehuang/Documents/MIT/2.12/team4_arm_ws/install/lib 
-Requires: actionlib_msgs

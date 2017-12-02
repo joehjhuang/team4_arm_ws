@@ -42,16 +42,26 @@ class Hand_Controller:
         while True:
             data, addr = self.sock.recvfrom(1024)
             if data == '\n':
-                x = float(self.sock.recvfrom(1024)[0])
+                x = self.sock.recvfrom(1024)[0]
                 self.sock.recvfrom(1024)
-                y = float(self.sock.recvfrom(1024)[0])
+                y = self.sock.recvfrom(1024)[0]
                 self.sock.recvfrom(1024)
-                z = float(self.sock.recvfrom(1024)[0])
+                z = self.sock.recvfrom(1024)[0]
                 self.sock.recvfrom(1024)
-                self.freeze = self.sock.recvfrom(1024)[0]
+                freeze = self.sock.recvfrom(1024)[0]
                 self.sock.recvfrom(1024)
-                self.release = self.sock.recvfrom(1024)[0]
-                self.euler = [x, y, z]
+                release = self.sock.recvfrom(1024)[0]
+                if type(freeze) == bool:
+                    self.freeze = freeze
+                if type(release) == bool:
+                    self.release = release
+                try:
+                    x = float(x)
+                    y = float(y)
+                    z = float(z)
+                    self.euler = [x, y, z]
+                except:
+                    print "discard"
 
     def callback(self, msg):
         euler = Vector3()
