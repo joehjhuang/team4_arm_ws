@@ -52,6 +52,7 @@ class PullDrawerAction(object):
                 move_distance = np.sqrt(np.sum(np.square(self.current_location - self.start_location)))
             self._feedback.moved_distance = moved_distance
             self._as.publish_feedback(self._feedback)
+            self.arm_force_pub.publish(Float32(force))
             r.sleep()
         if success:
             self._as.set_succeeded(self._result)

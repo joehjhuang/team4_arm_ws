@@ -33,7 +33,7 @@ class HaltAction(object):
             if self._as.is_preempt_requested():
                 self._as.set_preempted()
                 break
-            self.arm_velocity_pub.publish(Vector(0.,0.,0.))
+            self.arm_velocity_pub.publish(Vector3(0.,0.,0.))
             r.sleep()
         print "action halt server ended"
 

@@ -30,6 +30,7 @@ class ImitationAction(object):
         self.X_MULTIPLIER = 0.01
         self.Y_MULTIPLIER = 0.01
         self.THETA_MULTIPLIER = 0.1
+        self.freeze = True
         self._action_name = name
         self._as = actionlib.SimpleActionServer(self._action_name, a_a_action_server.msg.a_aAction, execute_cb = self.execute_cb, auto_start = False)
         self._as.start()
@@ -39,7 +40,7 @@ class ImitationAction(object):
         print "action a server started"
         freeze_sub = rospy.Subscriber('/freeze_bool', Bool, self.freeze_callback)
         release_sub = rospy.Subscriber('/release_bool', Bool, self.release_callback)
-        control_sub = rospy.Subscriber('/hand_controller', Vector3, self.control_callback)
+        control_sub = rospy.Subscriber('/hand_control', Vector3, self.control_callback)
         self.arm_velocity_pub = rospy.Publisher('/arm/velocity', Vector3, queue_size = 10)
         # velocity command is presented as x,y,theta
         self.arm_grab_pub = rospy.Publisher('/arm/grab', Bool, queue_size = 10)
