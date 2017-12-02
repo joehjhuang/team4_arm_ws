@@ -51,10 +51,14 @@ class Hand_Controller:
                 freeze = self.sock.recvfrom(1024)[0]
                 self.sock.recvfrom(1024)
                 release = self.sock.recvfrom(1024)[0]
-                if type(freeze) == bool:
-                    self.freeze = freeze
-                if type(release) == bool:
-                    self.release = release
+                if freeze == '1':
+                    self.freeze = True
+                if freeze == '0':
+                    self.freeze = False
+                if release == '1':
+                    self.release = True
+                if release == '0':
+                    self.release = False
                 try:
                     x = float(x)
                     y = float(y)
