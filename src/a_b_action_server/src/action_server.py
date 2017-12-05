@@ -40,12 +40,14 @@ class PullDrawerAction(object):
         goal_distance = goal.goal_distance
 
         self.dynamixel_controller = DynamixelController()
+        self.dyn_ready = False
         self.dynamixel_controller.closeGripper()
         while(self.dynamixel_controller.isMoving()):
             print "closing gripper"
             pass
 
         dyn_state = self.dynamixel_controller.getCurrentAngles()
+        self.dyn_ready = True
         self.joint_state_ready = False
         self.joint_state = np.array([0., dyn_state[0], dyn_state[1]]) # not ready since shoulder position is not set up yet
 
@@ -70,7 +72,15 @@ class PullDrawerAction(object):
             self._as.publish_feedback(self._feedback)
         if success:
             self._as.set_succeeded(self._result)
-        location_sub.unregister()
+
+        self.sea_state_sub.unregister()
+        self.action_sent_state_updater.shutdown()
+
+        while not self.dyn_ready:
+            pass
+        self.dynamixel_controller.close()
+        self.dynamixel_controller = None
+
         print "action b server ended"
 
     def sea_setstate_callback(self, msg):
@@ -85,6 +95,7 @@ class PullDrawerAction(object):
         return
 
     def action_sent_state_update_callback(self, msg):
+        self.dyn_ready = False
         if self.joint_state_ready:
             dyn_theta = self.dynamixel_controller.getCurrentAngles()
             self.joint_state[1] = dyn_theta[0]
@@ -107,6 +118,7 @@ class PullDrawerAction(object):
             while(self.dynamixel_controller.isMoving()):
                 print "moving"
                 pass
+        self.dyn_ready = True
         return
 
         

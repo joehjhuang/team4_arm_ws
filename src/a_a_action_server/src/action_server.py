@@ -116,7 +116,6 @@ class ImitationAction(object):
         self.action_joint_state_updater.shutdown()
         self.action_sent_state_updater.shutdown()
 
-        print "let me shutdown"
         while not self.dyn_ready:
             pass
         self.dynamixel_controller.close()

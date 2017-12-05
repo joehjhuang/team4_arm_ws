@@ -32,7 +32,7 @@ class Client:
         self.r = rospy.Rate(100.)
         self.sub = rospy.Subscriber('/current_task', Int16, self.callback)
         self.pub = rospy.Publisher('/current_task', Int16, queue_size = 10)
-        self.goal_distance = 0.3
+        self.goal_distance = 0.03
         self.velocity = 0.01
         self.perform_task = 100
         self.command_task = 100 #no task
