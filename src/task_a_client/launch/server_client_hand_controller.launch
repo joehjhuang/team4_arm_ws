@@ -1,0 +1,5 @@
+<launch>
+  <include file="$(find task_a_client)/launch/start_servers.launch"/>
+  <node name="task_a_client" pkg="task_a_client" type="action_client.py"/>
+  <include file="$(find hand_controller)/launch/hand_controller.launch"/>
+</launch>

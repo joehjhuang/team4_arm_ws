@@ -91,17 +91,15 @@ class ArmController():
         return
 
     def grab_cmd_callback(self, msg):
-        if not msg.data == self.grab_cmd:
-            self.grab_cmd = msg.data
-            if self.grab_cmd:
-                self.action_close_gripper = True
-                self.action_open_gripper = False
-            else:
-                self.action_open_gripper = True
-                self.action_close_gripper = False
-        else:
-            self.action_close_gripper = False
-            self.action_open_gripper = False
+        if not self.action_open_gripper and not self.action_close_gripper:
+            if not msg.data == self.grab_cmd:
+                self.grab_cmd = msg.data
+                if self.grab_cmd:
+                    self.action_close_gripper = True
+                    self.action_open_gripper = False
+                else:
+                    self.action_open_gripper = True
+                    self.action_close_gripper = False
         return
 
     def arm_velocity_cmd_callback(self, msg):
@@ -122,11 +120,13 @@ class ArmController():
                 while(self.dynamixel_controller.isMoving()):
                     print "closing gripper"
                     pass
+                self.action_close_gripper = False
             elif self.action_open_gripper:
                 self.dynamixel_controller.openGripper()
                 while(self.dynamixel_controller.isMoving()):
                     print "opening gripper"
                     pass
+                self.action_open_gripper = False
             else:
                 print "move to: ", self.action_joint_state
                 self.sea_cmd_pub.publish(Float32(self.action_joint_state[0]))
@@ -152,12 +152,12 @@ class ArmController():
                     prev_arm_location[1] + self.arm_velocity_cmd[1] * dt,
                     prev_arm_location[2] + self.arm_velocity_cmd[2] * dt]
             if self.arm.x_in_workspace(new_arm_location):
-                new_action_joint_state = np.array(self.arm.x_to_th(new_arm_location))
-                if self.arm.mech_reachable(new_action_joint_state):
-                    self.action_joint_state = new_action_joint_state
+                self.action_joint_state = np.array(self.arm.x_to_th(new_arm_location))
                 self.cmd_ready = True
-                print self.action_joint_state
+                #print self.action_joint_state
                 #print "\n"
+            else:
+                print "not in workspace"
         return
 
 

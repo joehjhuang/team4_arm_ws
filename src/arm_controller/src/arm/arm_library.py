@@ -17,13 +17,13 @@ class Arm():
         self.l = l
         self.th = th
         self.x = self.x_rel()
-        self.j_constr_pos = [np.pi/2,np.pi/2,np.pi/2]
-        self.j_constr_neg = [0,-np.pi/2,-np.pi/2]
+        self.j_constr = [np.pi/2 for _ in range(len(l))]
 
 
-     def J_rel(self,th):
+     def J_rel(self):
         """Returns the Jacobian using theta relative to arm joints"""
         l = self.l
+        th = self.th
         j00 = -l[0]*np.sin(th[0])-l[1]*np.sin(th[0]+th[1])-l[2]*np.sin(th[0]+th[1]+th[2])
         j01 = -l[1]*np.sin(th[0]+th[1])-l[2]*np.sin(th[0]+th[1]+th[2])
         j02 = -l[2]*np.sin(th[0]+th[1]+th[2])
@@ -33,10 +33,10 @@ class Arm():
         j20 = 1
         j21 = 1
         j22 = 1
-        return np.array([[j00,j01,j02],[j10,j11,j12],[j20,j21,j22]])
+        return np.matrix([[j11,j12,j13],[j21,j22,j23],[j31,j32,j33]])
 
      def J_abs(self):
-        """Returns Jacobian unp.sin theta relative to inertial frame
+        """Returns Jacobian unp.sing theta relative to inertial frame
           (Only for testing)"""
         l = self.l
         th = self.th
@@ -49,7 +49,7 @@ class Arm():
         j20 = 0;
         j21 = 0;
         j22 = 1;
-        return np.array([[j00,j01,j02],[j10,j11,j12],[j20,j21,j22]])
+        return np.matrix([[j11,j12,j13],[j21,j22,j23],[j31,j32,j33]])
 
      def x_rel(self):
         """Returns end effector position using theta relative to arm joints"""
@@ -95,7 +95,7 @@ class Arm():
      def torque(self,F):
         l = self.l
         th = self.th
-        np.transpose(self.J_rel(self.th))*F
+        np.transpose(self.J_rel)*F
 
      def get_theta(self):
         return self.th
@@ -117,32 +117,24 @@ class Arm():
         self.th = self.x_to_th(x)
         self.x = x
 
-     def x_in_workspace(self,x):
+     def x_in_workspace(self, x):
         """if self.x_rel() in workspace return true"""
-        if x[0]**2 + x[1]**2 > sum(self.l)**2 - 0.01:
+        #if self.x[0] > abs(sum(self.l)) or self.x[1] > abs(sum(self.l)):
+            #return False
+        print "x square: ", x[0]**2 + x[1]**2
+        print "sum: ", sum(self.l)**2
+        if x[0]**2 + x[1]**2 > sum(self.l)**2:
             return False
-        #inv kinematics test
-        l = self.l
-        X_e = x[0]
-        Y_e = x[1]
-        Phi_e = x[2]
-        Y_c = Y_e - l[2]*np.sin(Phi_e)
-        X_c = X_e - l[2]*np.cos(Phi_e)
-        alpha = np.arctan2(Y_c,X_c)
-        r = (X_c**2 + Y_c**2)**0.5
-        inner1 = (l[0]**2+l[1]**2-r**2)/(2*l[0]*l[1])
-        if abs(inner1) > 1: 
-            return False
-        inner2 = (l[0]**2+r**2-l[1]**2)/(2*l[0]*r)
-        if abs(inner2) >1:
-            return False
-
+        if x[0]**2 + x[1]**2 < (self.l[0]-self.l[1]-self.l[2])**2:
         return True
+
+
 
      def x_to_th(self,x):
         """Returns the angle on position for a given x coordinate"""
         if not self.x_in_workspace(x):
              raise Arm_Exception('X not in Workspace')
+        print "my x: ",x
         l = self.l
         X_e = x[0]
         Y_e = x[1]
@@ -152,35 +144,34 @@ class Arm():
         alpha = np.arctan2(Y_c,X_c)
         r = (X_c**2 + Y_c**2)**0.5
         inner1 = (l[0]**2+l[1]**2-r**2)/(2*l[0]*l[1])
-        #print "x",x
-        #print "inner1", inner1
-        #print "l", l
-        #print "r", r
-        #print "sum(l)",sum(self.l)
+        print "x",x
+        print "inner1", inner1
+        print "l", l
+        print "r", r
+        print "sum(l)",sum(self.l)
         beta = np.arccos( inner1 )
         gamma = np.arccos( (l[0]**2+r**2-l[1]**2)/(2*l[0]*r) )
-        #print "beta", beta
-        #print "gamma", gamma
         th0 = alpha - gamma
         th1 = np.pi - beta
         th2 = Phi_e - th0 - th1
         
-	if th0>self.j_constr_pos[0]:
-            th0=self.j_constr_pos[0]
-        elif th0<self.j_constr_neg[0]:
-            th0=-self.j_constr_neg[0]
+	if th0>self.j_constr[0]:
+            th0=self.j_constr[0]
+        elif th0<-self.j_constr[0]:
+            th0=-self.j_constr[0]
 
-        if th1>self.j_constr_pos[1]:
-            th1=self.j_constr_pos[1]
-        elif th1<self.j_constr_neg[1]:
-            th1=-self.j_constr_neg[1]
+        if th2>self.j_constr[0]:
+            th2=self.j_constr[0]
+        elif th2<-self.j_constr[0]:
+            th2=-self.j_constr[0]
 
-        if th2>self.j_constr_pos[2]:
-            th2=self.j_constr_pos[2]
-        elif th2<self.j_constr_neg[2]:
-            th2=-self.j_constr_neg[2]
+        if th1>self.j_constr[0]:
+            th1=self.j_constr[0]
+        elif th1<-self.j_constr[0]:
+            th1=-self.j_constr[0]
         
         ans = np.array([th0,th1,th2])
+	
         return ans
         
 
@@ -200,15 +191,13 @@ class Arm():
         """Returns the actuator torques for a desired th"""
         pass
 
-     #def plot_arm(self):
-        #"""Plots the position of the arm"""
-        #joints = self.x_joints
-        #plt.plot(joints[0],joints[1])
+     def plot_arm(self):
+        """Plots the position of the arm"""
+        joints = self.x_joints
+        plt.plot(joints[0],joints[1])
 
         
-     def th_vel(self,th,x_dot):
-         J_inv = np.linalg.inv( self.J_rel(th) )     
-         return np.dot(J_inv,x_dot)
+
 
 
 class PID():
@@ -277,93 +266,24 @@ class TimeStep():
     pass
 
 def main():
-    np.arccos((1+1-2)/(2*1*1))
-
-
-
-    th0 = 0.1;
-    th1 = 0.1;
-    th2 = 0.1;
+    th0 = 0;
+    th1 = 0;
+    th2 = 0;
     l0 = 0.3048;
     l1 = 0.3048;
-    l2 = 0.3048 *4.5/12.0;
+    l2 = 0.3048*4.5/float(12);
     f0 = 0;
     f1 = 0;
     F = np.array([f0,f1,0])
     th = np.array([th0,th1,th2]);
     l = np.array([l0,l1,l2]);
-    print "l**2" , sum(l)**2
     arm = Arm(l,th)
     #arm.plot_arm()
-    #arm.th_vel(th,[0.1,0.1,0.1])
-    print "x_to_th close", arm.x_to_th([-0.588156,0.171340,1.73397])
-    print ""
-    print "x_to_th", arm.x_to_th([-0.688156,0.171340,1.73397])
-    print "atan2 sqrt 3" ,np.arctan2(3**0.5,1)
-    print "acos 1/2", np.arccos(float(1)/float(2))
-
-
-
+    arm.x_to_th([-0.588156,0.171340,1.73387])
+    
 
 
 
 if __name__ == '__main__':
     main()
 
-
-
-"""General Structure
-Class for general arm functions
-Class for controlled movement of arm
-    -Class for Control
-Class to handle operations on each Timestep
-Class (main) for testing
-
-
-
-        b = 5
-        while(b < 4):
-            for i,th in enumerate(ans):
-                if abs(th) > j_constraint[i] and b == 0:
-                    ans2 = self.x_to_th_helper(x,beta = False, gamma = False)
-                    break
-                if abs(th) > j_constraint and b == 1:
-                    ans2 = self.x_to_th_helper(x,beta = True, gamma = False)
-                    break
-                if abs(th) > j_constraint and b == 2:
-                    ans2 = self.x_to_th_helper(x,beta = False, gamma = True)
-                    break
-                if abs(th) > j_constraint and b == 3:
-                    ans2 = self.x_to_th_helper(x,beta = True, gamma = True)
-                    break
-                ans = ans2
-                break
-            b +=1
-       return ans
-
-    
-            
- 
-    def x_to_th_helper(self,x,beta = True, gamma = True):
-        l = self.l
-        X_e = x[2]
-        Y_e = x[1]
-        Phi_e = x[0]
-        Y_c = Y_e - l[2]*np.sin(Phi_e)
-        X_c = X_e - l[2]*np.cos(Phi_e)
-        alpha = np.arctan2(Y_c,X_c)
-        r = (X_c**2 + Y_c**2)**0.5
-        inner1 = (l[0]**2+l[1]**2-r**2)/(2*l[0]*l[1])
-        if beta ==True:
-            beta = np.arccos( inner1 )
-        elif beta == False:
-            beta = -np.arccos( inner1 ) 
-        if gamma == True:
-            gamma = np.arccos( (l[0]**2+r**2-l[1]**2)/(2*l[0]*r) )
-        elif gamma == False:
-            gamma = -np.arccos( (l[0]**2+r**2-l[1]**2)/(2*l[0]*r) )
-        th0 = alpha - gamma
-        th1 = np.pi - beta
-        th2 = Phi_e - th0 - th1k,
-        return np.array([th0,th1,th2])
-"""

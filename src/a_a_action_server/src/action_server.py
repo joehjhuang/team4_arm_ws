@@ -67,14 +67,15 @@ class ImitationAction(object):
         print "action a server ended"
 
     def freeze_callback(self, msg):
+        print msg
         if msg.data:
-            print "freeze"
+            print "freezes"
             velocity = Vector3(0.,0.,0.)
             self.arm_velocity_pub.publish(velocity)
             self.freeze = True
             self.prev_freeze = True
         else:
-            # unfreeze
+            print "unfreeze"
             if self.prev_freeze:
                 self.set_relative = True
             self.freeze = False

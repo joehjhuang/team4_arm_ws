@@ -28,7 +28,7 @@ class HaltAction(object):
         # the execute callback function of the action server
         print "action halt server started"
         r = rospy.Rate(100)
-        self.arm_velocity_pub = rospy.Publisher('/arm/velocity', Vector3, queue_size = 10)
+        self.arm_velocity_pub = rospy.Publisher('/arm/velocity_cmd', Vector3, queue_size = 10)
         while True:
             if self._as.is_preempt_requested():
                 self._as.set_preempted()
