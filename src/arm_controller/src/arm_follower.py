@@ -47,7 +47,7 @@ A possible different version is to stop the robot command if it takes too long
 # action_close_gripper
 # action_open_gripper
 
-class ArmController():
+class ArmFollower():
     def __init__(self): 
         self.dynamixel_controller = DynamixelController()
         dyn_state = self.dynamixel_controller.getCurrentAngles()
@@ -162,8 +162,8 @@ class ArmController():
 
 
 if __name__ == '__main__':
-    rospy.init_node("arm_controller",anonymous=True)
-    node = ArmController()
+    rospy.init_node("arm_follower",anonymous=True)
+    node = ArmFollower()
     rospy.spin()
     
     

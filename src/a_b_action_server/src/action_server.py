@@ -6,21 +6,25 @@ Prereq:
 Joe Huang Nov 2017
 """
 import rospy
-import numpy
+import numpy as np
 import actionlib
 from std_msgs.msg import Float32
 from geometry_msgs.msg import Vector3
 import a_b_action_server.msg
+from arm_library import Arm
+from dynamixel_node import DynamixelController
+import time
+import math as m
 
 class PullDrawerAction(object):
     """
     This is an action server node for task A action B
     The node should be named by a_b_action_server
-    The action simply command the robot arm to pull the drawer with a specific force to specific distance
+    The action simply use position control to arm to pull the drawer with a specific velocity
     Subscribe topics:
-        /arm/location: geometry_msgs/Vector3
+        /sea/position: std_msgs/Float32
     Publish topics:
-        /arm/force: std_msgs/Float32
+        /sea/position_cmd: std_msgs/Float32
     """
 
     def __init__(self, name):
@@ -32,37 +36,79 @@ class PullDrawerAction(object):
 
     def execute_cb(self, goal):
         print "action b server started"
-        self.start_location = None
-        location_sub = rospy.Subscriber('/arm/location', Vector3, self.location_callback)
-        self.arm_force_pub = rospy.Publisher('/arm/force', Float32, queue_size = 10)
-        force = goal.force
-        self.arm_force_pub.publish(Float32(force))
+        self.y_velocity = goal.velocity
         goal_distance = goal.goal_distance
-        moved_distance = 0.
-        r =rospy.Rate(1)
+
+        self.dynamixel_controller = DynamixelController()
+        self.dynamixel_controller.closeGripper()
+        while(self.dynamixel_controller.isMoving()):
+            print "closing gripper"
+            pass
+
+        dyn_state = self.dynamixel_controller.getCurrentAngles()
+        self.joint_state_ready = False
+        self.joint_state = np.array([0., dyn_state[0], dyn_state[1]]) # not ready since shoulder position is not set up yet
+
+        ft_to_m = 0.3048
+        in_to_ft = float(1)/float(12)
+        self.l = np.array([12., 12., 4.5]) * in_to_ft * ft_to_m
+        self.speed = 50
+
+        self.time_step = 0.1
+        self.sea_state_sub = rospy.Subscriber("/sea/position", Float32, self.sea_setstate_callback, queue_size = 1)
+        self.sea_cmd_pub = rospy.Publisher("/sea/position_cmd", Float32, queue_size = 1)
+        self.action_sent_state_updater = rospy.Timer(rospy.Duration(self.time_step), self.action_sent_state_update_callback)
+
         success = True
-        while moved_distance <= goal_distance:
+        self.moved_distance = 0.
+        while self.moved_distance <= goal_distance:
             if self._as.is_preempt_requested():
                 self._as.set_preempted()
                 success = False
                 break
-            if self.start_location is None:
-                move_distance = 0.
-            else:
-                move_distance = np.sqrt(np.sum(np.square(self.current_location - self.start_location)))
-            self._feedback.moved_distance = moved_distance
+            self._feedback.moved_distance = self.moved_distance
             self._as.publish_feedback(self._feedback)
-            self.arm_force_pub.publish(Float32(force))
-            r.sleep()
         if success:
             self._as.set_succeeded(self._result)
         location_sub.unregister()
         print "action b server ended"
 
-    def location_callback(self, msg):
-        self.current_location = np.array([msg.x, msg.y, msg.z])
-        if self.start_location is None:
-            self.start_location = np.array([msg.x, msg.y, msg.z])
+    def sea_setstate_callback(self, msg):
+        if not self.joint_state_ready:
+            self.joint_state[0] = msg.data
+            self.arm = Arm(self.l, self.joint_state.tolist())
+            self.start_location = self.arm.th_to_x(self.joint_state.tolist())
+            self.joint_state_ready = True
+            print "joint state is ready!"
+        else:
+            self.joint_state[0] = msg.data
+        return
+
+    def action_sent_state_update_callback(self, msg):
+        if self.joint_state_ready:
+            dyn_theta = self.dynamixel_controller.getCurrentAngles()
+            self.joint_state[1] = dyn_theta[0]
+            self.joint_state[2] = dyn_theta[1]
+            prev_arm_location = self.arm.th_to_x(self.joint_state.tolist())
+            self.moved_distance = np.sqrt((prev_arm_location[0] - self.start_location[0])**2 + (prev_arm_location[1] - self.start_location[1])**2)
+
+            new_arm_location = [prev_arm_location[0],
+                    prev_arm_location[1] + self.time_step * self.y_velocity,
+                    prev_arm_location[2]]
+
+            action_joint_state = self.joint_state.copy()
+            if self.arm.x_in_workspace(new_arm_location):
+                action_joint_state = np.array(self.arm.x_to_th(new_arm_location))
+            else:
+                print "not in workspace"
+
+            self.sea_cmd_pub.publish(Float32(action_joint_state[0]))
+            self.dynamixel_controller.rotateArm([action_joint_state[1], action_joint_state[2]])
+            while(self.dynamixel_controller.isMoving()):
+                print "moving"
+                pass
+        return
+
         
 
 if __name__ == '__main__':

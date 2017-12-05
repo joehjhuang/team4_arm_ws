@@ -14,6 +14,7 @@ import a_a_action_server.msg
 import a_b_action_server.msg
 import a_halt_action_server.msg
 from std_msgs.msg import Int16
+import time
 
 class Client:
     """
@@ -31,13 +32,13 @@ class Client:
         self.r = rospy.Rate(100.)
         self.sub = rospy.Subscriber('/current_task', Int16, self.callback)
         self.pub = rospy.Publisher('/current_task', Int16, queue_size = 10)
-        self.goal_distance = 100.
-        self.force = 10.
+        self.goal_distance = 0.3
+        self.velocity = 0.01
         self.perform_task = 100
         self.command_task = 100 #no task
         self.halt_client = Halt_Client()
         self.a_client = A_Client()
-        self.b_client = B_Client(self.force, self.goal_distance)
+        self.b_client = B_Client(self.velocity, self.goal_distance)
         # halt while not doing other thing
         self.halt_client.start()
         while not rospy.is_shutdown():
@@ -46,10 +47,13 @@ class Client:
                 # kill the current task first
                 if self.perform_task == 0:
                     self.a_client.cancel()
+                    time.sleep(0.5)
                 elif self.perform_task == 1:
                     self.b_client.cancel()
+                    time.sleep(0.5)
                 else:
                     self.halt_client.cancel()
+                    time.sleep(0.5)
                 # run the next task
                 self.perform_task = self.command_task
                 if self.perform_task == 0:
@@ -123,9 +127,9 @@ class B_Client:
     """
     The B action client
     """
-    def __init__(self, force, goal_distance, name = 'a_b_action_server'):
+    def __init__(self, velocity, goal_distance, name = 'a_b_action_server'):
         self.b_client = actionlib.SimpleActionClient(name, a_b_action_server.msg.a_bAction)
-        self.force = force
+        self.velocity = velocity
         self.goal_distance = goal_distance
 
     def start(self):
@@ -133,7 +137,7 @@ class B_Client:
         self.b_client.wait_for_server()
         print "start performing action b"
         goal = a_b_action_server.msg.a_bGoal()
-        goal.force = self.force
+        goal.velocity = self.velocity
         goal.goal_distance = self.goal_distance
         self.b_client.send_goal(goal)
         return
