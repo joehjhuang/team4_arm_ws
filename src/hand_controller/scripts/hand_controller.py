@@ -1,12 +1,10 @@
 #!/usr/bin/python
 """
-2.12 Hand Controller: Using the UDP to collect data sent from Arduino
+2.12 Hand Controller: Using the UDP to collect data sent from Arduino, purely reflect the result of arduino
 PreReq:
     Turn on the hotspot of the computer
     check the IP and SSID keys and change which in /team4_ws/src/hand_controller/src/SensorDataTrans/SensorDataTrans.ino and arduino_secrets.h
     Upload the Arduino code above to arduino of hand controller
-TODO: Write the prereq
-TODO: check if the boolean is corresponding to semantic
 TODO: write the filter to make the control message more clear
 Joe Huang Nov 2017
 """
@@ -24,9 +22,9 @@ class Hand_Controller:
     """
     The node that recieve data from arduino and publish it in ROS
     Publish topics:
-        /freeze_bool: std_msgs/Bool
-        /release_bool: std_msgs/Bool
-        /hand_control: geometry_msgs/Vector3
+        /freeze_bool: std_msgs/Bool; freeze or not; keep publishing until rospy ends
+        /release_bool: std_msgs/Bool; release gripper or not; keep publishing until rospy ends
+        /hand_control: geometry_msgs/Vector3; angle of hand controller, 0~360; keep publishing until rospy ends
     """
     def __init__(self):
         # make sure the button when is up and when is down

@@ -125,7 +125,9 @@ class Arm():
         print "sum: ", sum(self.l)**2
         if x[0]**2 + x[1]**2 > sum(self.l)**2:
             return False
+        if x[0]**2 + x[1]**2 < (self.l[0]-self.l[1]-self.l[2])**2:
         return True
+
 
 
      def x_to_th(self,x):

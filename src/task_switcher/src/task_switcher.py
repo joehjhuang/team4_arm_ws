@@ -21,13 +21,12 @@ class Task_Switcher:
         """
         The node that show which task should operate
         Publish topics:
-            /current_task: std_msgs/Int16
+            /current_task: std_msgs/Int16; the current task should be doing; publish only button pressed
         """
         print "press task number, press <Esc> to escape keyboard detecting mode"
         orig_settings = termios.tcgetattr(sys.stdin)
         tty.setraw(sys.stdin)
-        self.pub = rospy.Publisher('/current_task', Int16, queue_size=10)
-        #rospy.Timer(rospy.Duration(0.02), self.callback)
+        self.pub = rospy.Publisher('/current_task', Int16, queue_size=1)
         while True:
             key = ord(sys.stdin.read(1)[0]) - 48
             if key in TASK_LIST:

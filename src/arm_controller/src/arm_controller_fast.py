@@ -152,7 +152,9 @@ class ArmController():
                     prev_arm_location[1] + self.arm_velocity_cmd[1] * dt,
                     prev_arm_location[2] + self.arm_velocity_cmd[2] * dt]
             if self.arm.x_in_workspace(new_arm_location):
-                self.action_joint_state = np.array(self.arm.x_to_th(new_arm_location))
+                new_action_joint_state = np.array(self.arm.x_to_th(new_arm_location))
+                if self.arm.mech_reachable(new_action_joint_state):
+                    self.action_joint_state = new_action_joint_state
                 self.cmd_ready = True
                 print self.action_joint_state
                 #print "\n"

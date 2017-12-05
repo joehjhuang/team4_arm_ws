@@ -1,4 +1,12 @@
 #! /usr/bin/env python
+"""
+2.12 Task A Client: task A client consists of the whole framework
+PreReq:
+    Start all of the action server
+    Start task switcher
+current_task is updated once when the task should be switched, only happen in human switching the task or task A action b is done
+Joe Huang Nov 2017
+"""
 
 import rospy
 import actionlib
@@ -8,6 +16,17 @@ import a_halt_action_server.msg
 from std_msgs.msg import Int16
 
 class Client:
+    """
+    The node recieve task data from keyboard and start different actions as wanted
+    Publish topics:
+        /current_task: std_msgs/Int16; current task should operate; published only needed
+    Subscribe topics:
+        /current_task: std_msgs/Int16; current task should operate; published only needed
+    Action Clients:
+        a_halt_action_server: a_halt_action_server/a_haltAction
+        a_a_action_server: a_a_action_server/a_aAction
+        a_b_action_server: a_b_action_server/a_bAction
+    """
     def __init__(self):
         self.r = rospy.Rate(100.)
         self.sub = rospy.Subscriber('/current_task', Int16, self.callback)
@@ -54,10 +73,14 @@ class Client:
 
             
 class Halt_Client:
+    """
+    The halt action client
+    """
     def __init__(self, name = 'a_halt_action_server'):
         self.halt_client = actionlib.SimpleActionClient(name, a_halt_action_server.msg.a_haltAction)
 
     def start(self):
+        # start halt action and send out the goal, which is nothing
         self.halt_client.wait_for_server()
         print "halt the robot"
         goal = a_halt_action_server.msg.a_haltGoal()
@@ -74,10 +97,14 @@ class Halt_Client:
         return False
         
 class A_Client:
+    """
+    The A action client
+    """
     def __init__(self, name = 'a_a_action_server'):
         self.a_client = actionlib.SimpleActionClient(name, a_a_action_server.msg.a_aAction)
 
     def start(self):
+        # start a action and send out the goal, which is nothing
         self.a_client.wait_for_server()
         print "start performing action a"
         goal = a_a_action_server.msg.a_aGoal()
@@ -93,12 +120,16 @@ class A_Client:
         return False
 
 class B_Client:
+    """
+    The B action client
+    """
     def __init__(self, force, goal_distance, name = 'a_b_action_server'):
         self.b_client = actionlib.SimpleActionClient(name, a_b_action_server.msg.a_bAction)
         self.force = force
         self.goal_distance = goal_distance
 
     def start(self):
+        # start b action and send out the goal, which is the force and goal_distance
         self.b_client.wait_for_server()
         print "start performing action b"
         goal = a_b_action_server.msg.a_bGoal()
